@@ -3,16 +3,7 @@ return [
     'ctrl' => [
         'title' => 'LLL:EXT:static_cities_de/Resources/Private/Language/locallang_db.xlf:tx_staticcitiesde_domain_model_record',
         'label' => 'zip',
-        'tstamp' => 'tstamp',
-        'crdate' => 'crdate',
-        'cruser_id' => 'cruser_id',
-        'versioningWS' => true,
-        'delete' => 'deleted',
-        'enablecolumns' => [
-            'disabled' => 'hidden',
-            'starttime' => 'starttime',
-            'endtime' => 'endtime',
-        ],
+        'versioningWS' => false,
         'searchFields' => 'zip,city,state,community,latitude,longitude',
         'iconfile' => 'EXT:static_cities_de/Resources/Public/Icons/tx_staticcitiesde_domain_model_record.gif'
     ],
@@ -125,6 +116,6 @@ return [
                 'default' => ''
             ],
         ],
-    
+
     ],
 ];
