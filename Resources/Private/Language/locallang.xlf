@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:static_cities_de/Resources/Private/Language/locallang.xlf" date="2022-12-07T09:45:10Z" product-name="static_cities_de">
+		<header/>
+		<body>
+			<trans-unit id="tx_staticcitiesde_domain_model_record" resname="tx_staticcitiesde_domain_model_record">
+				<source>Record</source>
+			</trans-unit>
+			<trans-unit id="tx_staticcitiesde_domain_model_record.zip" resname="tx_staticcitiesde_domain_model_record.zip">
+				<source>Zip</source>
+			</trans-unit>
+			<trans-unit id="tx_staticcitiesde_domain_model_record.city" resname="tx_staticcitiesde_domain_model_record.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_staticcitiesde_domain_model_record.state" resname="tx_staticcitiesde_domain_model_record.state">
+				<source>State</source>
+			</trans-unit>
+			<trans-unit id="tx_staticcitiesde_domain_model_record.community" resname="tx_staticcitiesde_domain_model_record.community">
+				<source>Community</source>
+			</trans-unit>
+			<trans-unit id="tx_staticcitiesde_domain_model_record.latitude" resname="tx_staticcitiesde_domain_model_record.latitude">
+				<source>Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_staticcitiesde_domain_model_record.longitude" resname="tx_staticcitiesde_domain_model_record.longitude">
+				<source>Longitude</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

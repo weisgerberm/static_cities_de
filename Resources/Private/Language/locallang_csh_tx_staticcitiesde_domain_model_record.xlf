@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:static_cities_de/Resources/Private/Language/locallang_csh_tx_staticcitiesde_domain_model_record.xlf" date="2022-12-07T09:45:10Z" product-name="static_cities_de">
+		<header/>
+		<body>
+			<trans-unit id="zip.description" resname="zip.description">
+				<source>string to provide the possibility for zips to begin with a zero</source>
+			</trans-unit>
+			<trans-unit id="city.description" resname="city.description">
+				<source>city. A city can contain multiple zips</source>
+			</trans-unit>
+			<trans-unit id="state.description" resname="state.description">
+				<source>state</source>
+			</trans-unit>
+			<trans-unit id="community.description" resname="community.description">
+				<source>community</source>
+			</trans-unit>
+			<trans-unit id="latitude.description" resname="latitude.description">
+				<source>x-coordinate</source>
+			</trans-unit>
+			<trans-unit id="longitude.description" resname="longitude.description">
+				<source>y-coordinate</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

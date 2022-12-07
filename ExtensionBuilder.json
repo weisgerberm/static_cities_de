@@ -1,0 +1,156 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    256,
+                    201.77777862548828
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_index": false,
+                    "_default1_list": false,
+                    "_default2_show": false,
+                    "_default3_new_create": false,
+                    "_default4_edit_update": false,
+                    "_default5_delete": false,
+                    "customActions": []
+                },
+                "name": "Record",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": true,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": false,
+                    "type": "Entity",
+                    "uid": "775647113871"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "string to provide the possibility for zips to begin with a zero",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "zip",
+                            "propertyType": "String",
+                            "uid": "378397630964"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "city. A city can contain multiple zips",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "city",
+                            "propertyType": "String",
+                            "uid": "1058615340352"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "state",
+                            "propertyType": "String",
+                            "uid": "1472646335508"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "community",
+                            "propertyType": "String",
+                            "uid": "1627326849742"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "x-coordinate",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "latitude",
+                            "propertyType": "String",
+                            "uid": "727380414566"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "y-coordinate",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "longitude",
+                            "propertyType": "String",
+                            "uid": "1312715318719"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": []
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [],
+        "description": "Static Info Table for german cities with coordinates",
+        "emConf": {
+            "category": "misc",
+            "custom_category": "",
+            "dependsOn": "typo3 => 11.5.0-11.5.99\n",
+            "disableLocalization": true,
+            "disableVersioning": false,
+            "generateDocumentationTemplate": false,
+            "generateEditorConfig": true,
+            "generateEmptyGitRepository": true,
+            "sourceLanguage": "en",
+            "state": "stable",
+            "targetVersion": "11.5.0-11.5.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "static_cities_de",
+        "name": "static_cities_de",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "",
+                "email": "mark.weisgerber@outlook.de",
+                "name": "Mark Weisgerber",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "Weisgerber"
+    },
+    "wires": [],
+    "storagePath": "\/home\/u676675988\/domains\/darf-ich-mit.de\/typo3\/extensions\/",
+    "log": {
+        "last_modified": "2022-12-07 09:45",
+        "extension_builder_version": "v11.0.8",
+        "be_user": " (1)"
+    }
+}
