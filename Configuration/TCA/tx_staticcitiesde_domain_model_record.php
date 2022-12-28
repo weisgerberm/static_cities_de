@@ -8,7 +8,7 @@ return [
         'iconfile' => 'EXT:static_cities_de/Resources/Public/Icons/tx_staticcitiesde_domain_model_record.gif'
     ],
     'types' => [
-        '1' => ['showitem' => 'zip, city, state, community, latitude, longitude, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
+        '1' => ['showitem' => 'zip, city, state, community, latitude, longitude, email, website, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
     ],
     'columns' => [
         'hidden' => [
@@ -109,6 +109,26 @@ return [
         'longitude' => [
             'exclude' => true,
             'label' => 'LLL:EXT:static_cities_de/Resources/Private/Language/locallang_db.xlf:tx_staticcitiesde_domain_model_record.longitude',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim,required',
+                'default' => ''
+            ],
+        ],
+        'email' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:static_cities_de/Resources/Private/Language/locallang_db.xlf:tx_staticcitiesde_domain_model_record.email',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim,required',
+                'default' => ''
+            ],
+        ],
+        'website' => [
+            'exclude' => true,
+            'label' => 'LLL:EXT:static_cities_de/Resources/Private/Language/locallang_db.xlf:tx_staticcitiesde_domain_model_record.website',
             'config' => [
                 'type' => 'input',
                 'size' => 30,

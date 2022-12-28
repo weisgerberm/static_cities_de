@@ -67,6 +67,22 @@ class Record extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $longitude = null;
 
     /**
+     * email
+     *
+     * @var string
+     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
+     */
+    protected $email = '';
+
+    /**
+     * website
+     *
+     * @var string
+     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
+     */
+    protected $website = '';
+
+    /**
      * Returns the zip
      *
      * @return string
@@ -190,5 +206,47 @@ class Record extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setLongitude(string $longitude)
     {
         $this->longitude = $longitude;
+    }
+
+    /**
+     * Returns the email
+     *
+     * @return string
+     */
+    public function getEmail()
+    {
+        return $this->email;
+    }
+
+    /**
+     * Sets the email
+     *
+     * @param string $email
+     * @return void
+     */
+    public function setEmail(string $email)
+    {
+        $this->email = $email;
+    }
+
+    /**
+     * Returns the website
+     *
+     * @return string
+     */
+    public function getWebsite()
+    {
+        return $this->website;
+    }
+
+    /**
+     * Sets the website
+     *
+     * @param string $website
+     * @return void
+     */
+    public function setWebsite(string $website)
+    {
+        $this->website = $website;
     }
 }

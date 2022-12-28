@@ -4,7 +4,7 @@
             "config": {
                 "position": [
                     256,
-                    201.77777862548828
+                    201
                 ]
             },
             "name": "New Model Object",
@@ -105,6 +105,30 @@
                             "propertyName": "longitude",
                             "propertyType": "String",
                             "uid": "1312715318719"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "email",
+                            "propertyType": "String",
+                            "uid": "65402220339"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": true,
+                            "propertyIsL10nModeExclude": false,
+                            "propertyIsNullable": false,
+                            "propertyIsRequired": true,
+                            "propertyName": "website",
+                            "propertyType": "String",
+                            "uid": "74550338016"
                         }
                     ]
                 },
@@ -133,8 +157,8 @@
         },
         "extensionKey": "static_cities_de",
         "name": "static_cities_de",
-        "originalExtensionKey": "",
-        "originalVendorName": "",
+        "originalExtensionKey": "static_cities_de",
+        "originalVendorName": "Weisgerber",
         "persons": [
             {
                 "company": "",
@@ -149,8 +173,8 @@
     "wires": [],
     "storagePath": "\/home\/u676675988\/domains\/darf-ich-mit.de\/typo3\/extensions\/",
     "log": {
-        "last_modified": "2022-12-07 09:45",
-        "extension_builder_version": "v11.0.8",
+        "last_modified": "2022-12-28 02:44",
+        "extension_builder_version": "v11.0.9",
         "be_user": " (1)"
     }
 }

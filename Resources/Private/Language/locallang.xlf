@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="EXT:static_cities_de/Resources/Private/Language/locallang.xlf" date="2022-12-07T09:45:10Z" product-name="static_cities_de">
+	<file source-language="en" datatype="plaintext" original="EXT:static_cities_de/Resources/Private/Language/locallang.xlf" date="2022-12-28T14:44:46Z" product-name="static_cities_de">
 		<header/>
 		<body>
 			<trans-unit id="tx_staticcitiesde_domain_model_record" resname="tx_staticcitiesde_domain_model_record">
@@ -23,6 +23,12 @@
 			</trans-unit>
 			<trans-unit id="tx_staticcitiesde_domain_model_record.longitude" resname="tx_staticcitiesde_domain_model_record.longitude">
 				<source>Longitude</source>
+			</trans-unit>
+			<trans-unit id="tx_staticcitiesde_domain_model_record.email" resname="tx_staticcitiesde_domain_model_record.email">
+				<source>Email</source>
+			</trans-unit>
+			<trans-unit id="tx_staticcitiesde_domain_model_record.website" resname="tx_staticcitiesde_domain_model_record.website">
+				<source>Website</source>
 			</trans-unit>
 		</body>
 	</file>
