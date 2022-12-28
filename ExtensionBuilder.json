@@ -113,9 +113,9 @@
                             "propertyIsExcludeField": true,
                             "propertyIsL10nModeExclude": false,
                             "propertyIsNullable": false,
-                            "propertyIsRequired": true,
+                            "propertyIsRequired": false,
                             "propertyName": "email",
-                            "propertyType": "String",
+                            "propertyType": "Email",
                             "uid": "65402220339"
                         },
                         {
@@ -125,9 +125,9 @@
                             "propertyIsExcludeField": true,
                             "propertyIsL10nModeExclude": false,
                             "propertyIsNullable": false,
-                            "propertyIsRequired": true,
+                            "propertyIsRequired": false,
                             "propertyName": "website",
-                            "propertyType": "String",
+                            "propertyType": "InputLink",
                             "uid": "74550338016"
                         }
                     ]
@@ -173,7 +173,7 @@
     "wires": [],
     "storagePath": "\/home\/u676675988\/domains\/darf-ich-mit.de\/typo3\/extensions\/",
     "log": {
-        "last_modified": "2022-12-28 02:44",
+        "last_modified": "2022-12-28 02:51",
         "extension_builder_version": "v11.0.9",
         "be_user": " (1)"
     }

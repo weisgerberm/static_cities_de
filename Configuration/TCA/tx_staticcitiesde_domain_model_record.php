@@ -4,7 +4,13 @@ return [
         'title' => 'LLL:EXT:static_cities_de/Resources/Private/Language/locallang_db.xlf:tx_staticcitiesde_domain_model_record',
         'label' => 'zip',
         'versioningWS' => false,
-        'searchFields' => 'zip,city,state,community,latitude,longitude',
+        'delete' => 'deleted',
+        'enablecolumns' => [
+            'disabled' => 'hidden',
+            'starttime' => 'starttime',
+            'endtime' => 'endtime',
+        ],
+        'searchFields' => 'zip,city,state,community,latitude,longitude,email,website',
         'iconfile' => 'EXT:static_cities_de/Resources/Public/Icons/tx_staticcitiesde_domain_model_record.gif'
     ],
     'types' => [
@@ -122,19 +128,17 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,required',
+                'eval' => 'nospace,email',
                 'default' => ''
-            ],
+            ]
         ],
         'website' => [
             'exclude' => true,
             'label' => 'LLL:EXT:static_cities_de/Resources/Private/Language/locallang_db.xlf:tx_staticcitiesde_domain_model_record.website',
             'config' => [
                 'type' => 'input',
-                'size' => 30,
-                'eval' => 'trim,required',
-                'default' => ''
-            ],
+                'renderType' => 'inputLink',
+            ]
         ],
 
     ],

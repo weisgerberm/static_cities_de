@@ -70,7 +70,6 @@ class Record extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * email
      *
      * @var string
-     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
      */
     protected $email = '';
 
@@ -78,7 +77,6 @@ class Record extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * website
      *
      * @var string
-     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
      */
     protected $website = '';
 
