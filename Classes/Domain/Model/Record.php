@@ -3,247 +3,103 @@
 declare(strict_types=1);
 
 namespace Weisgerber\StaticCitiesDe\Domain\Model;
-
-
-/**
- * This file is part of the "static_cities_de" Extension for TYPO3 CMS.
- *
- * For the full copyright and license information, please read the
- * LICENSE.txt file that was distributed with this source code.
- *
- * (c) 2022 Mark Weisgerber <mark.weisgerber@outlook.de>
- */
-
-/**
- * Record
- */
 class Record extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
 {
+    public const string TABLE_NAME = 'tx_staticcitiesde_domain_model_record';
 
     /**
      * string to provide the possibility for zips to begin with a zero
      *
-     * @var string
-     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
      */
-    protected $zip = null;
+    protected string $zip;
 
-    /**
-     * city. A city can contain multiple zips
-     *
-     * @var string
-     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
-     */
-    protected $city = null;
+    protected string $city;
 
-    /**
-     * state
-     *
-     * @var string
-     */
-    protected $state = null;
+    protected string $state;
 
-    /**
-     * community
-     *
-     * @var string
-     */
-    protected $community = null;
+    protected string $community;
 
-    /**
-     * x-coordinate
-     *
-     * @var string
-     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
-     */
-    protected $latitude = null;
+    protected string $latitude;
 
-    /**
-     * y-coordinate
-     *
-     * @var string
-     * @TYPO3\CMS\Extbase\Annotation\Validate("NotEmpty")
-     */
-    protected $longitude = null;
+    protected string $longitude;
 
-    /**
-     * email
-     *
-     * @var string
-     */
-    protected $email = '';
+    protected string $email;
 
-    /**
-     * website
-     *
-     * @var string
-     */
-    protected $website = '';
-
-    /**
-     * Returns the zip
-     *
-     * @return string
-     */
-    public function getZip()
+    protected string $website;
+    public function getZip(): string
     {
         return $this->zip;
     }
-
-    /**
-     * Sets the zip
-     *
-     * @param string $zip
-     * @return void
-     */
-    public function setZip(string $zip)
+    public function setZip(string $zip): void
     {
         $this->zip = $zip;
     }
-
-    /**
-     * Returns the city
-     *
-     * @return string
-     */
-    public function getCity()
+    public function getCity(): string
     {
         return $this->city;
     }
 
-    /**
-     * Sets the city
-     *
-     * @param string $city
-     * @return void
-     */
-    public function setCity(string $city)
+    public function setCity(string $city): void
     {
         $this->city = $city;
     }
 
-    /**
-     * Returns the state
-     *
-     * @return string
-     */
-    public function getState()
+    public function getState(): string
     {
         return $this->state;
     }
 
-    /**
-     * Sets the state
-     *
-     * @param string $state
-     * @return void
-     */
-    public function setState(string $state)
+    public function setState(string $state): void
     {
         $this->state = $state;
     }
 
-    /**
-     * Returns the community
-     *
-     * @return string
-     */
-    public function getCommunity()
+    public function getCommunity(): string
     {
         return $this->community;
     }
 
-    /**
-     * Sets the community
-     *
-     * @param string $community
-     * @return void
-     */
-    public function setCommunity(string $community)
+    public function setCommunity(string $community): void
     {
         $this->community = $community;
     }
 
-    /**
-     * Returns the latitude
-     *
-     * @return string
-     */
-    public function getLatitude()
+    public function getLatitude(): string
     {
         return $this->latitude;
     }
 
-    /**
-     * Sets the latitude
-     *
-     * @param string $latitude
-     * @return void
-     */
-    public function setLatitude(string $latitude)
+    public function setLatitude(string $latitude): void
     {
         $this->latitude = $latitude;
     }
 
-    /**
-     * Returns the longitude
-     *
-     * @return string
-     */
-    public function getLongitude()
+    public function getLongitude(): string
     {
         return $this->longitude;
     }
 
-    /**
-     * Sets the longitude
-     *
-     * @param string $longitude
-     * @return void
-     */
-    public function setLongitude(string $longitude)
+    public function setLongitude(string $longitude): void
     {
         $this->longitude = $longitude;
     }
 
-    /**
-     * Returns the email
-     *
-     * @return string
-     */
-    public function getEmail()
+    public function getEmail(): string
     {
         return $this->email;
     }
 
-    /**
-     * Sets the email
-     *
-     * @param string $email
-     * @return void
-     */
-    public function setEmail(string $email)
+    public function setEmail(string $email): void
     {
         $this->email = $email;
     }
 
-    /**
-     * Returns the website
-     *
-     * @return string
-     */
-    public function getWebsite()
+    public function getWebsite(): string
     {
         return $this->website;
     }
 
-    /**
-     * Sets the website
-     *
-     * @param string $website
-     * @return void
-     */
-    public function setWebsite(string $website)
+    public function setWebsite(string $website): void
     {
         $this->website = $website;
     }

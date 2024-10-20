@@ -1,145 +1,58 @@
 <?php
+
+use Weisgerber\DarfIchMit\Utility\TcaUtility;
+use Weisgerber\StaticCitiesDe\Domain\Model\Record;
+
 return [
-    'ctrl' => [
-        'title' => 'LLL:EXT:static_cities_de/Resources/Private/Language/locallang_db.xlf:tx_staticcitiesde_domain_model_record',
-        'label' => 'zip',
-        'versioningWS' => false,
-        'delete' => 'deleted',
-        'enablecolumns' => [
-            'disabled' => 'hidden',
-            'starttime' => 'starttime',
-            'endtime' => 'endtime',
-        ],
-        'searchFields' => 'zip,city,state,community,latitude,longitude,email,website',
-        'iconfile' => 'EXT:static_cities_de/Resources/Public/Icons/tx_staticcitiesde_domain_model_record.gif'
-    ],
+    'ctrl' => TcaUtility::getController(Record::TABLE_NAME, 'static_cities_de',['label' => 'zip'],false,false),
     'types' => [
         '1' => ['showitem' => 'zip, city, state, community, latitude, longitude, email, website, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
     ],
-    'columns' => [
-        'hidden' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.visible',
-            'config' => [
-                'type' => 'check',
-                'renderType' => 'checkboxToggle',
-                'items' => [
-                    [
-                        0 => '',
-                        1 => '',
-                        'invertStateDisplay' => true
-                    ]
-                ],
+    'columns' => \nn\t3::TCA()->createConfig(
+        Record::TABLE_NAME,
+        ['hidden'],
+        [
+            'zip' => [
+                'exclude' => true,
+                'label' => TcaUtility::title('zip'),
+                'config' => TcaUtility::getInput(true),
             ],
-        ],
-        'starttime' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.starttime',
-            'config' => [
-                'type' => 'input',
-                'renderType' => 'inputDateTime',
-                'eval' => 'datetime,int',
-                'default' => 0,
-                'behaviour' => [
-                    'allowLanguageSynchronization' => true
-                ]
+            'city' => [
+                'exclude' => true,
+                'label' => TcaUtility::title('city'),
+                'config' => TcaUtility::getInput(true),
             ],
-        ],
-        'endtime' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.endtime',
-            'config' => [
-                'type' => 'input',
-                'renderType' => 'inputDateTime',
-                'eval' => 'datetime,int',
-                'default' => 0,
-                'range' => [
-                    'upper' => mktime(0, 0, 0, 1, 1, 2038)
-                ],
-                'behaviour' => [
-                    'allowLanguageSynchronization' => true
-                ]
+            'state' => [
+                'exclude' => true,
+                'label' => TcaUtility::title('state'),
+                'config' => TcaUtility::getInput(),
             ],
-        ],
+            'community' => [
+                'exclude' => true,
+                'label' => TcaUtility::title('community'),
+                'config' => TcaUtility::getInput(),
+            ],
+            'latitude' => [
+                'exclude' => true,
+                'label' => TcaUtility::title('latitude'),
+                'config' => TcaUtility::getInput(true),
+            ],
+            'longitude' => [
+                'exclude' => true,
+                'label' => TcaUtility::title('longitude'),
+                'config' => TcaUtility::getInput(true),
+            ],
+            'email' => [
+                'exclude' => true,
+                'label' => TcaUtility::title('email'),
+                'config' => TcaUtility::getLink(['email']),
+            ],
+            'website' => [
+                'exclude' => true,
+                'label' => TcaUtility::title('website'),
+                'config' => TcaUtility::getLink(['url']),
+            ],
 
-        'zip' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:static_cities_de/Resources/Private/Language/locallang_db.xlf:tx_staticcitiesde_domain_model_record.zip',
-            'config' => [
-                'type' => 'input',
-                'size' => 30,
-                'eval' => 'trim,required',
-                'default' => ''
-            ],
-        ],
-        'city' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:static_cities_de/Resources/Private/Language/locallang_db.xlf:tx_staticcitiesde_domain_model_record.city',
-            'config' => [
-                'type' => 'input',
-                'size' => 30,
-                'eval' => 'trim,required',
-                'default' => ''
-            ],
-        ],
-        'state' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:static_cities_de/Resources/Private/Language/locallang_db.xlf:tx_staticcitiesde_domain_model_record.state',
-            'config' => [
-                'type' => 'input',
-                'size' => 30,
-                'eval' => 'trim',
-                'default' => ''
-            ],
-        ],
-        'community' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:static_cities_de/Resources/Private/Language/locallang_db.xlf:tx_staticcitiesde_domain_model_record.community',
-            'config' => [
-                'type' => 'input',
-                'size' => 30,
-                'eval' => 'trim',
-                'default' => ''
-            ],
-        ],
-        'latitude' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:static_cities_de/Resources/Private/Language/locallang_db.xlf:tx_staticcitiesde_domain_model_record.latitude',
-            'config' => [
-                'type' => 'input',
-                'size' => 30,
-                'eval' => 'trim,required',
-                'default' => ''
-            ],
-        ],
-        'longitude' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:static_cities_de/Resources/Private/Language/locallang_db.xlf:tx_staticcitiesde_domain_model_record.longitude',
-            'config' => [
-                'type' => 'input',
-                'size' => 30,
-                'eval' => 'trim,required',
-                'default' => ''
-            ],
-        ],
-        'email' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:static_cities_de/Resources/Private/Language/locallang_db.xlf:tx_staticcitiesde_domain_model_record.email',
-            'config' => [
-                'type' => 'input',
-                'size' => 30,
-                'eval' => 'nospace,email',
-                'default' => ''
-            ]
-        ],
-        'website' => [
-            'exclude' => true,
-            'label' => 'LLL:EXT:static_cities_de/Resources/Private/Language/locallang_db.xlf:tx_staticcitiesde_domain_model_record.website',
-            'config' => [
-                'type' => 'input',
-                'renderType' => 'inputLink',
-            ]
-        ],
-
-    ],
+        ]
+    ),
 ];
