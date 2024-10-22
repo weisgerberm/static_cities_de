@@ -4,7 +4,11 @@ use Weisgerber\DarfIchMit\Utility\TcaUtility;
 use Weisgerber\StaticCitiesDe\Domain\Model\Record;
 
 return [
-    'ctrl' => TcaUtility::getController(Record::TABLE_NAME, 'static_cities_de',['label' => 'zip'],false,false),
+    'ctrl' => TcaUtility::getController(Record::TABLE_NAME, 'static_cities_de',[
+        'label' => 'zip',
+        'searchFields' => 'zip, city',
+        'default_sortby' => '',
+    ],false,false),
     'types' => [
         '1' => ['showitem' => 'zip, city, state, community, latitude, longitude, email, website, --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:access, hidden, starttime, endtime'],
     ],
