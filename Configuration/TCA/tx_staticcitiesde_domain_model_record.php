@@ -56,7 +56,6 @@ return [
                 'label' => TcaUtility::title('website'),
                 'config' => TcaUtility::getLink(['url']),
             ],
-
         ]
     ),
 ];
